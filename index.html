@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id = input-container>
+        <div id = start-stop>
+            <button id = "start-button" class = "input-button">play</button>
+            <button id = "stop-button" class = "input-button">stop</button>
+            <button id = "skip-button" class = "input-button">skip</button>
+            <button id = "mix-button" class = "input-button">mixed</button>
+        </div>
+
+        <div id = "download-container">
+            <input type="text" id = "download-input">
+            <button id = "download-button">download link</button>
+        </div>
+
+        <div class="slidecontainer">
+            <div>sound:</div>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        
+    </div> 
+
+    <div id = "playlist-container">
+        <ul id = "playlists">
+            
+        </ul>
+    </div>
+
+    <div class = "closed" id = "music-container">
+        <ul id = "music-files">
+
+        </ul>
+    </div>
+    
+</body>
+<script type = "module" src = "scripts/player.js"></script>
+</html>
